@@ -8,145 +8,147 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+ <header>
+  <div class="logo"><h1>CINEARCHIVE</h1></div>
+  <nav class="nav-superior">
+    <input type="text" id="busqueda" placeholder="Buscar películas o series...">
+    <button id="btn-buscar">🔍</button>
+    <button id="btn-menu">☰</button>
+  </nav>
+</header>
 
-  <header>
-    <div class="logo">
-      <h1>CINEARCHIVE</h1>
+<aside class="sidebar">
+  <ul>
+    <li><strong>Películas</strong></li>
+    <li>Acción</li>
+    <li>Terror</li>
+    <li>Suspenso</li>
+    <li>Comedia</li>
+    <li>Drama</li>
+    <li>Ciencia ficción</li>
+    <li>Romance</li>
+    <li>Animación</li>
+    <li>Documentales</li>
+  </ul>
+  <ul>
+    <li><strong>Series</strong></li>
+    <li>Acción</li>
+    <li>Misterio</li>
+    <li>Terror</li>
+    <li>Comedia</li>
+    <li>Ciencia ficción</li>
+    <li>Drama</li>
+    <li>Aventura</li>
+    <li>Thriller</li>
+  </ul>
+</aside>
+
+<main class="contenido">
+  
+  <section class="peliculas-recomendadas">
+    <h2>Películas Recomendadas</h2>
+    <div class="cards" id="cards-peli">
+
+      <article class="card" title="Acción">
+        <a href="inception.html">
+          <figure><img src="https://m.media-amazon.com/images/I/A1eIBPcRUqL._AC_UF894,1000_QL80_.jpg"></figure>
+          <h3>INCEPTION</h3>
+        </a>
+        <p>Dom Cobb es un ladrón que se infiltra en los sueños para robar secretos del subconsciente. Su última misión: implantar una idea.</p>
+      </article>
+      <article class="card" title="Ciencia ficción">
+        <a href="interstellar.html">
+          <figure><img src="https://i.pinimg.com/originals/3f/09/dd/3f09ddcc1d3c3740f6a74e63d57fba61.jpg"></figure>
+          <h3>INTERSTELLAR</h3>
+        </a>
+        <p>Un grupo de astronautas viaja por un agujero de gusano para encontrar un nuevo hogar para la humanidad.</p>
+      </article>
+      <article class="card" title="Animación">
+        <a href="spiderman.html">
+          <figure><img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/UN6NC7QUSNHHTFSRSNR4CB35EY.jpg"></figure>
+          <h3>SPIDER-MAN</h3>
+        </a>
+        <p>Miles Morales salta entre mundos en el multiverso con animación revolucionaria y una historia emocional.</p>
+      </article>
+      <article class="card" title="Acción">
+        <a href="matrix.html">
+          <figure><img src="https://i.pinimg.com/236x/24/7d/25/247d25bbc57ca3c716c6e3200cc56d5c.jpg"></figure>
+          <h3>MATRIX</h3>
+        </a>
+        <p>Un hacker descubre la verdad sobre la realidad y lucha contra las máquinas que controlan el mundo.</p>
+      </article>
+      <article class="card" title="Aventura">
+        <a href="avatar.html">
+          <figure><img src="https://i.pinimg.com/736x/8b/2f/a6/8b2fa6fb94810cd0d335b479896f7fc8.jpg"></figure>
+          <h3>AVATAR</h3>
+        </a>
+        <p>Explora Pandora y descubre un mundo lleno de aventuras, culturas y criaturas increíbles.</p>
+      </article>
+      <article class="card" title="Comedia">
+        <a href="jumanji.html">
+          <figure><img src="https://es.web.img2.acsta.net/pictures/17/11/08/14/53/3315450.jpg"></figure>
+          <h3>JUMANJI</h3>
+        </a>
+        <p>Un juego mágico cobra vida y los jugadores deben sobrevivir a sus desafíos para regresar a la realidad.</p>
+      </article>
     </div>
-    <nav class="nav-superior">
-      <button class="btn-busqueda">🔍</button>
-    </nav>
-  </header>
+  </section>
 
-  <aside class="sidebar">
-    <nav>
-      <ul>
-        <li><strong>Explorar</strong></li>
-        <li>Inicio</li>
-        <li>Tendencias</li>
-        <li>Más vistos</li>
-        <li>Nuevos lanzamientos</li>
-      </ul>
-      <ul>
-        <li><strong>Películas</strong></li>
-        <li>Acción</li>
-        <li>Terror</li>
-        <li>Suspenso</li>
-        <li>Comedia</li>
-        <li>Drama</li>
-        <li>Ciencia ficción</li>
-        <li>Romance</li>
-        <li>Animación</li>
-        <li>Documentales</li>
-      </ul>
-      <ul>
-        <li><strong>Series</strong></li>
-        <li>Acción</li>
-        <li>Misterio</li>
-        <li>Terror</li>
-        <li>Comedia</li>
-        <li>Ciencia ficción</li>
-        <li>Drama</li>
-        <li>Aventura</li>
-        <li>Thriller</li>
-      </ul>
-      <ul>
-        <li><strong>Contenido infantil</strong></li>
-        <li>Animación</li>
-        <li>Educativos</li>
-        <li>Aventuras para niños</li>
-        <li>Series familiares</li>
-      </ul>
-      <ul>
-        <li><strong>Colecciones especiales</strong></li>
-        <li>Clásicos esenciales</li>
-        <li>Premios Óscar</li>
-        <li>Populares este mes</li>
-        <li>Originales exclusivos</li>
-      </ul>
-    </nav>
-  </aside>
+  <section class="series-recomendadas">
+    <h2>Series Recomendadas</h2>
+    <div class="cards" id="cards-ser">
+      
+      <article class="card" title="Crimen">
+        <a href="dexter.html">
+          <figure><img src="https://i.pinimg.com/736x/54/9c/38/549c3846eb6c32db0f50732e93ee65a5.jpg"></figure>
+          <h3>DEXTER</h3>
+        </a>
+        <p>Dexter Morgan lleva una doble vida como forense y asesino en serie que solo mata criminales.</p>
+      </article>
+      <article class="card" title="Acción">
+        <a href="theboys.html">
+          <figure><img src="https://pics.filmaffinity.com/the_boys-166815477-large.jpg"></figure>
+          <h3>THE BOYS</h3>
+        </a>
+        <p>Un grupo de vigilantes expone a superhéroes corruptos en un mundo oscuro y violento.</p>
+      </article>
+      <article class="card" title="Drama">
+        <a href="breakingbad.html">
+          <figure><img src="https://i.pinimg.com/564x/61/75/4d/61754da3d90010fe1e21a8bea77657b0.jpg"></figure>
+          <h3>BREAKING BAD</h3>
+        </a>
+        <p>Un profesor de química se convierte en fabricante de drogas para asegurar el futuro de su familia.</p>
+      </article>
+      <article class="card" title="Acción">
+        <a href="strangerthings.html">
+          <figure><img src="https://images.ctfassets.net/4cd45et68cgf/22eaxyrfqLTOmD0ZgFJDX0/6d7b8a0f4c3130fd87c9921cbd11d180/image5.jpg?w=1200"></figure>
+          <h3>STRANGER THINGS</h3>
+        </a>
+        <p>Un grupo de niños enfrenta misterios sobrenaturales en su ciudad mientras buscan a su amigo desaparecido.</p>
+      </article>
+      <article class="card" title="Misterio">
+        <a href="sherlock.html">
+          <figure><img src="https://www.formulatv.com/images/series/posters/400/481/dest_1.jpg"></figure>
+          <h3>SHERLOCK</h3>
+        </a>
+        <p>El famoso detective y su compañero Watson resuelven crímenes complejos en el Londres moderno.</p>
+      </article>
+      <article class="card" title="Terror">
+        <a href="hannibal.html">
+          <figure><img src="https://mythicwall.com/cdn/shop/files/Hannibal_2BTv_2BShow_2BPrint_2BWall_2BArt_2BPoster_2B1-mMziX_1024x1024.jpg?v=1762442280"></figure>
+          <h3>HANNIBAL</h3>
+        </a>
+        <p>El FBI investiga a un asesino serial brillante mientras el doctor Hannibal Lecter oculta sus verdaderas intenciones.</p>
+      </article>
+    </div>
+  </section>
+</main>
 
-  <main class="contenido">
-    <section class="peliculas-recomendadas">
-      <h2>Películas Recomendadas</h2>
-      <div class="cards">
-        <article class="card">
-          <a href="inception.html">
-            <figure>
-              <img src="https://m.media-amazon.com/images/I/A1eIBPcRUqL._AC_UF894,1000_QL80_.jpg" alt="Inception">
-            </figure>
-            <h3>INCEPTION</h3>
-          </a>
-          <p>Una mente dentro de otra mente. Una misión imposible donde los sueños se vuelven realidad y peligro.</p>
-        </article>
+<footer>
+  <h2>CINEARCHIVE</h2>
+  <p>Explora las mejores películas y series. CINEARCHIVE te permite descubrir recomendaciones, géneros y tendencias en un solo lugar.</p>
+</footer>
 
-        <article class="card">
-          <a href="interstellar.html">
-            <figure>
-              <img src="https://i.pinimg.com/originals/3f/09/dd/3f09ddcc1d3c3740f6a74e63d57fba61.jpg" alt="Interstellar">
-            </figure>
-            <h3>INTERSTELLAR</h3>
-          </a>
-          <p>Viajar más allá del tiempo y del espacio. Una aventura emocional sobre lo que significa salvar a la humanidad.</p>
-        </article>
-
-        <article class="card">
-          <a href="spiderman.html">
-            <figure>
-              <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/UN6NC7QUSNHHTFSRSNR4CB35EY.jpg" alt="Spider-Man Across the Spider-Verse">
-            </figure>
-            <h3>SPIDER-MAN: ACROSS THE SPIDER-VERSE</h3>
-          </a>
-          <p>El multiverso nunca se vio tan increíble. Miles Morales salta entre mundos con una animación espectacular.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="series-recomendadas">
-      <h2>Series Recomendadas</h2>
-      <div class="cards">
-        <article class="card">
-          <a href="dexter.html">
-            <figure>
-              <img src="https://i.pinimg.com/736x/54/9c/38/549c3846eb6c32db0f50732e93ee65a5.jpg" alt="Dexter">
-            </figure>
-            <h3>DEXTER</h3>
-          </a>
-          <p>Un brillante forense con una vida muy peculiar que te mantiene al borde del asiento.</p>
-        </article>
-
-        <article class="card">
-          <a href="theboys.html">
-            <figure>
-              <img src="https://pics.filmaffinity.com/the_boys-166815477-large.jpg" alt="The Boys">
-            </figure>
-            <h3>THE BOYS</h3>
-          </a>
-          <p>Superhéroes corruptos, humor negro, acción y un mundo más oscuro de lo que imaginas.</p>
-        </article>
-
-        <article class="card">
-          <a href="breakingbad.html">
-            <figure>
-              <img src="https://i.pinimg.com/564x/61/75/4d/61754da3d90010fe1e21a8bea77657b0.jpg" alt="Breaking Bad">
-            </figure>
-            <h3>BREAKING BAD</h3>
-          </a>
-          <p>Drama y crimen. Un profesor convertido en fabricante de sustancias para “mantener” a su familia.</p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <h2>CINEARCHIVE</h2>
-    <p>
-      Explora las mejores películas y series.  
-      CINEARCHIVE es para descubrir recomendaciones, géneros y tendencias en un solo lugar.  
-      Navega por nuestras categorías y encuentra contenido para cada gusto.
-    </p>
-  </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>
